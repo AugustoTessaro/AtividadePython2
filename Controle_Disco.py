@@ -1,6 +1,6 @@
 
 lista_usuarios = []
 with open('Usuarios.txt', 'r') as arquivo:
-    for valores in arquivo:
-        print(valores)
+    for posicao, valores in (enumerate(arquivo)):
+        print(posicao + 1, valores)
         
