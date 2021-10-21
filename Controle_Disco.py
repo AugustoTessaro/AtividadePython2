@@ -1,3 +1,5 @@
+import pandas as pd
+import twilio
 
 with open('Usuarios.txt', 'r') as arquivo:
     for posicao, valores in (enumerate(arquivo)):
