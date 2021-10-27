@@ -2,12 +2,6 @@ from os import spawnl
 import pandas as pd
 import twilio as tw
 
-'''
-with open('Usuarios.txt', 'r') as arquivo:
-    for posicao, valores in (enumerate(arquivo)):
-        print(posicao + 1, valores)
-'''
-
 usuarios = []
 armaz_usuarios = []
 
