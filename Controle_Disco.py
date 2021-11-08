@@ -17,5 +17,6 @@ print(armaz_usuarios)
 
 
 
-
-
+print("ACME Inc. Uso do espaço em disco pelos usuário")
+print("----------------------------------------------")
+print("Nr. Usuário         Espaço         utilizado %")
