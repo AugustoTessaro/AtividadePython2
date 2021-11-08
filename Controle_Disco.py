@@ -2,23 +2,23 @@ from os import spawnl
 import pandas as pd
 import twilio as tw
 
-usuarios = []
-armaz_usuarios = []
+def convert_byte_megabyte(numero_byte):
+    numero_Kbyte = numero_byte/1024
+    numero_Mbyte = round((numero_Kbyte/1024),2)
+    return numero_Mbyte
+
+def calcula_porcent(espaco_total, espaco_util):
+    espaco_porcent = round((espaco_util/espaco_total)*100,2)
+    return espaco_porcent
+
+
 
 tabela = pd.read_table('Usuarios.txt', header= None, sep=" ", names=["usuarios", "armazenamento_usuarios"])
 
-#usuarios = 
-#armaz_usuarios = tabela[1]
-
-print(tabela["usuarios"])
+espaco_total = tabela["armazenamento_usuarios"].sum()
 
 
 
 
 
 
-
-
-print("ACME Inc. Uso do espaço em disco pelos usuário")
-print("----------------------------------------------")
-print("Nr. Usuário         Espaço         utilizado %")
